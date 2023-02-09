@@ -9,7 +9,7 @@
     /* margin: 20px auto; */
     width: 240px;
     height: 240px;
-    /* background: rgba(220, 6, 6, 0.1); */
+    background: rgba(220, 6, 6, 0.1);
     display:grid;
     grid-template-columns: 300px 200px;
     grid-row: 100px auto;
