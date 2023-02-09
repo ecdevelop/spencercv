@@ -70,10 +70,11 @@ body {
 }
 
 .middle-container .skillsAndQuali {
+    border-radius: 25px;
     text-align: center;
     color: white;
-    margin: 20px ;
-    padding: 10px;
+    /* margin: 20px ; */
+    padding: 40px 40px;
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
 }
@@ -109,17 +110,17 @@ body {
 .frontend-container {
     display: flex;
     justify-content: space-between;
-    height: 400px;
-    width: 90%;
+    height: 500px;
+    width: 100%;
     margin: 0 auto;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     border-radius: 30px;
 }
 
 .frontend-images {
     float: left;
     /* margin: 20px auto; */
-    width: 30%;
+    width: 25%;
     height: 100%;
     background: rgba(89, 0, 0, 0.1);
     display: grid;
@@ -176,7 +177,7 @@ body {
 .front-description {
     justify-content: flex;
     height: 400px;
-    width: 70%;
+    width: 75%;
     /* border-left: 1px solid white; */
     line-height: 1.5;
 }
@@ -205,9 +206,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     height: 400px;
-    width: 90%;
+    width: 100%;
+    height: 500px;
     margin: 0 auto;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     border-radius: 30px;
 }
 
@@ -220,7 +222,7 @@ body {
 .backend-images {
     float: right;
     /* margin: 20px auto; */
-    width: 30%;
+    width: 25%;
     height: 100%;
     background: rgba(89, 0, 0, 0.1);
     display: grid;
@@ -234,10 +236,11 @@ body {
 
 .backend-container .description {
     justify-content: flex;
-    height: 400px;
-    width: 70%;
+    height: 100%;
+    width: 75%;
     color: white;
     border-right: 1px solid white;
+    background: rgba(10, 7, 44, 0.3);
 }
 
 .backend-container .description p{
@@ -273,11 +276,14 @@ body {
 }
 
 .other-skills-images{
+    box-sizing: border-box;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     padding: 10px;
+    background: rgba(165, 160, 180, 0.422);
 }
 
 #git{
@@ -291,6 +297,10 @@ body {
 
 #github{
     border-radius: 100%;
+}
+
+#oracle{
+    width: 250px;
 }
 
 .other-skills-description{
