@@ -16,7 +16,6 @@ body {
 }
 
 .top-container nav {
-
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -44,7 +43,6 @@ body {
     color: white;
     font-size: 20;
     text-shadow: 2px 2px 8px black;
-
 }
 
 
@@ -68,21 +66,11 @@ body {
     margin: 20px ;
     padding: 10px;
     width: 100%;
-
 }
 
 .middle-container hr {
     border-style: dotted;
 }
-
-/* .middle-container h1{
-    color: white;
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, serif;
-    font-size: 50px;
-}  */
 
 .middle-container .skills-wrapper {
     height: 100%;
@@ -95,7 +83,6 @@ body {
 .middle-container h2 {
     color: white;
     text-align: center;
-
 }
 
 .middle-container img {
@@ -109,11 +96,11 @@ body {
     height: 400px;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 30px;
 }
 
-.container {
+.frontend-images {
     float: left;
     /* margin: 20px auto; */
     width: 30%;
@@ -145,7 +132,8 @@ body {
     float: left;
     margin: 20px auto;
     width: 240px;
-    height: 240px; m                                                     background: rgba(89, 0, 0, 0.9);
+    height: 240px; m                                                    
+    background: rgba(89, 0, 0, 0.9);
     display:grid;
     grid-template-columns: 100px 200px;
     grid-row: 100px auto;
@@ -191,6 +179,7 @@ body {
 
 .front-description ul li {
     text-align: left;
+    color: white;
 }
 
 /* ------------------- */
@@ -204,7 +193,7 @@ body {
     border-radius: 30px;
 }
 
-.back-container {
+.backend-images {
     float: right;
     /* margin: 20px auto; */
     width: 30%;
@@ -217,7 +206,6 @@ body {
     grid-row-gap: 10px;
     /* padding :10px; */
     border-radius: 20px;
-
 }
 
 .box {
@@ -260,6 +248,48 @@ body {
 }
 
 .middle-space-between {
-    height: 30px;
+    margin: 30px;
+    padding: 30px;
+    
+}
+
+.other-technologies-wrapper h1{
+ text-align: center;
+ color: white;
+ padding: 20px;
+ margin-top: 10px;
+}
+
+.other-skills-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+}
+
+#git{
+    width: 350px;
+}
+
+#postman{
+
+    border-radius: 100%;
+}
+
+#github{
+    border-radius: 100%;
+}
+
+.other-skills-description{
+    color: white;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer{
 
 }
