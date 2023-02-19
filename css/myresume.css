@@ -6,7 +6,7 @@
 body {
     background-image: url(../images/238870.jpg);
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
 }
 
@@ -34,12 +34,13 @@ nav span{
 }
 
 .profile-photo{
-    width:400px;
-    height:400px;
+    max-width:20%;
+    height:auto;
     position: absolute;
     right: 350px;
     top: 250px;
     border-radius: 100%;
+    margin: auto auto;
 }
 
 .top-container .Intro {
@@ -47,6 +48,7 @@ nav span{
     position: absolute;
     top: 400px;
     left: 240px;
+    margin: auto auto;
 }
 
  nav ul a {
@@ -337,3 +339,7 @@ nav span{
     margin: 10px;
     width: 100%;
 }
+
+
+
+
