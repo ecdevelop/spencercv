@@ -350,6 +350,7 @@ nav span{
         flex-direction: column-reverse;
         width: 100%;
         text-align: center;
+        margin-top: 80px;
     }
 
     nav {
