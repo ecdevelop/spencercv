@@ -34,8 +34,8 @@ nav span{
 }
 
 .profile-photo{
-    height:100%;
-    width: 100%;
+    height:380px;
+    width: 380px;
     border-radius: 100%;
 }
 
@@ -134,8 +134,7 @@ nav span{
 }
 
 .frontend-images {
-    float: left;
-    width: 25%;
+    width: 500px;
     height: 100%;
     display: grid;
     grid-template-columns: 220px 220px;
@@ -158,11 +157,15 @@ nav span{
 .front-description {
     justify-content: flex;
     height: 100%;
-    width: 75%;
+    width: 100%;
     color: white;
     border-left: 1px solid white;
     border-radius: 0px 30px 30px 0px;
     background: rgba(10, 7, 44, 0.9);
+}
+
+.front-description ul{
+    margin:1rem;
 }
  
 .front-description h1 {
@@ -205,7 +208,7 @@ nav span{
 
 .backend-images {
     float: right;
-    width: 25%;
+    width: 500px;
     height: 100%;
     display: grid;
     grid-template-columns: 220px 220px;
@@ -219,12 +222,16 @@ nav span{
 .backend-container .description {
     justify-content: flex;
     height: 100%;
-    width: 75%;
+    width: 100%;
     color: white;
     border-right: 1px solid white;
     border-radius: 30px 0px 0px 30px;
     background: rgba(10, 7, 44, 0.9);
     margin-right: 10px;
+}
+
+.backend-container .description ul{
+    margin: 1rem;
 }
 
 .description h1{
@@ -350,8 +357,18 @@ nav span{
         flex-direction: column-reverse;
         width: 100%;
         text-align: center;
-        margin-top: 100px;
+        font-size: small;
+        text-shadow: 2px 2px 8px black;
     }
+
+    .top-container .Intro .introdesc{
+        width: 100%;
+        margin-top: 20px;
+     }
+     
+     .top-container .img-pp {
+         width: 70%;
+     }
 
     nav {
         display: flex;
@@ -364,6 +381,7 @@ nav span{
         line-height: 2;
         list-style-type: none;
     }
+
     .frontend-container {
         display: flex;
         flex-direction: column;
@@ -372,18 +390,19 @@ nav span{
         border: 4px solid white;
         border-radius: 30px;
         box-shadow: 0 5px 10px 1px black;
+        font-size: small;
     }
 
     .frontend-images {
-        float: left;
         width: 100%;
         height: 25%;
         display: grid;
-        grid-template-columns: 220px 220px;
+        grid-template-columns: 200px 200px;
         grid-row: 100px auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
         border-radius: 20px 20px 0px 0px;
+        background: rgba(213, 213, 213, 0.2);
     }
 
     .box {
@@ -392,8 +411,6 @@ nav span{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 40px;
-        font-family: sans-serif;
     }
     
     .front-description {
@@ -433,7 +450,6 @@ nav span{
         grid-row: 100px auto;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        /* padding :10px; */
         border-radius: 30px 30px 0px 0px;
     }
     
@@ -464,24 +480,39 @@ nav span{
     }
 
     .other-skills-images{
-        box-sizing: border-box;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 10px;
+        padding: 30px;
         background: rgba(165, 160, 180, 0.422);
         box-shadow: 0 5px 10px 1px black;
-
-        float: left;
         width: 100%;
-        height: 25%;
+        height: 100%;
         display: grid;
         grid-template-columns: 220px 220px;
-        grid-row: 100px auto;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row: 100px 100px;
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
         border-radius: 20px 20px 0px 0px;
+    }
+
+    #git{
+        display: block;
+        width: 220px;
+    }
+    
+    #postman{
+    
+        border-radius: 100%;
+    }
+    
+    #github{
+        border-radius: 100%;
+    }
+    
+    #oracle{
+        width: 250px;
+    }
+    
+    #docker{
+        width: 190px;
+        border-radius: 20px;
     }
 }
