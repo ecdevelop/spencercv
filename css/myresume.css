@@ -43,7 +43,7 @@ nav span{
     display: flex;
     flex-direction: row;
     width: 70%;
-    margin: 200px auto;
+    margin: 100px auto;
     align-items: center;
 }
 
@@ -350,7 +350,7 @@ nav span{
         flex-direction: column-reverse;
         width: 100%;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     nav {
