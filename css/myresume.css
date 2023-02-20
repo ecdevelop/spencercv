@@ -416,6 +416,7 @@ nav span{
     }
 
     .frontend-container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -460,6 +461,7 @@ nav span{
     }
 
     .backend-container {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         width: 100%;
