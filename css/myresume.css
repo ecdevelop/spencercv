@@ -532,7 +532,7 @@ nav span{
         border-radius: 20px 20px 0px 0px;
         grid-auto-rows: 200px;
         gap: 10px;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
      #git{
