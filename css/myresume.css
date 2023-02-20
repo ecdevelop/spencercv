@@ -1,10 +1,11 @@
 * {
     margin: 0;
     top: 0;
+    box-sizing: border-box;
 }
 
 body {
-    
+
     background-image: url(../images/238870.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -12,23 +13,27 @@ body {
     background-size: cover;
 }
 
+p,a {
+    font-size: calc(10px + 0.390625vw);
+}
+
 .top-container {
     height: 100%;
 }
 
- nav {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: end;
     padding: 20px;
 }
 
-nav li{
+nav li {
     list-style: none;
     display: inline;
 }
 
-nav span{
+nav span {
     align-self: center;
     margin-right: 50px;
     text-decoration: none;
@@ -38,10 +43,11 @@ nav span{
     text-shadow: 2px 2px 8px rgb(86, 76, 76);
 }
 
-.profile-photo{
-    height:100%;
+.profile-photo {
+    height: 100%;
     width: 100%;
     border-radius: 100%;
+    border: 5px solid white;
 }
 
 .top-container .Intro {
@@ -52,15 +58,15 @@ nav span{
     align-items: center;
 }
 
-.top-container .Intro .introdesc{
-   width: 70%;
+.top-container .Intro .introdesc {
+    width: 70%;
 }
 
 .top-container .img-pp {
     width: 30%;
 }
 
- nav ul a {
+nav ul a {
     margin-right: 50px;
     text-decoration: none;
     color: white;
@@ -97,7 +103,6 @@ nav span{
     width: 100%;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.818);
     background: rgba(247, 244, 244, 0.1)
-    
 }
 
 .middle-container hr {
@@ -123,7 +128,7 @@ nav span{
     height: 150px;
 }
 
-.frontend-images img{
+.frontend-images img {
     width: 150px;
     height: 150px;
 }
@@ -132,7 +137,7 @@ nav span{
     display: flex;
     justify-content: space-between;
     height: 400px;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     border: 4px solid white;
     border-radius: 30px;
@@ -140,7 +145,7 @@ nav span{
 }
 
 .frontend-images {
-    width: 500px;
+    width: 25%;
     height: 100%;
     display: grid;
     grid-template-columns: 220px 220px;
@@ -151,29 +156,29 @@ nav span{
 }
 
 .box {
+    width: 100%;
     margin: auto;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
     font-family: sans-serif;
 }
 
 .front-description {
     justify-content: flex;
     height: 100%;
-    width: 100%;
+    width: 75%;
     color: white;
     border-left: 1px solid white;
     border-radius: 0px 30px 30px 0px;
     background: rgba(10, 7, 44, 0.9);
 }
 
-.front-description ul{
-    margin:1rem;
+.front-description ul {
+    margin: 1rem;
 }
- 
+
 .front-description h1 {
     padding: 10px;
     text-align: center;
@@ -197,9 +202,10 @@ nav span{
 /* ------------------- */
 
 .backend-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
-    width: 98%;
+    width: 100%;
     height: 400px;
     margin: 0 auto;
     border: 4px solid white;
@@ -207,14 +213,14 @@ nav span{
     box-shadow: 0 5px 10px 1px black;
 }
 
-.backend-images img{
+.backend-images img {
     width: 150px;
     height: 150px;
 }
 
 .backend-images {
     float: right;
-    width: 500px;
+    width: 25%;
     height: 100%;
     display: grid;
     grid-template-columns: 220px 220px;
@@ -228,7 +234,7 @@ nav span{
 .backend-container .description {
     justify-content: flex;
     height: 100%;
-    width: 100%;
+    width: 75%;
     color: white;
     border-right: 1px solid white;
     border-radius: 30px 0px 0px 30px;
@@ -236,17 +242,17 @@ nav span{
     margin-right: 10px;
 }
 
-.backend-container .description ul{
+.backend-container .description ul {
     margin: 1rem;
 }
 
-.description h1{
+.description h1 {
     margin-top: 10px;
 }
 
-.backend-container .description p{
+.backend-container .description p {
     padding: 0px 10px;
-    text-align: justify;
+    text-align: center;
     color: white;
     line-height: 1.5;
 }
@@ -255,7 +261,7 @@ nav span{
     padding: 10px;
     text-align: center;
     color: white;
-    
+
 }
 
 .backend-container .description ul li {
@@ -265,110 +271,112 @@ nav span{
 .middle-space-between {
     margin: 10px;
     padding: 10px;
-    
+
 }
 
-.other-technologies-wrapper h1{
- text-align: center;
- color: white;
- padding: 20px;
- margin-top: 10px;
+.other-technologies-wrapper h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-.other-skills-images{
+.other-skills-images {
     box-sizing: border-box;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background: rgba(165, 160, 180, 0.422);
     box-shadow: 0 5px 10px 1px black;
+    flex-wrap: wrap;
 }
 
-#git{
+#git {
     width: 350px;
 }
 
-#postman{
+#postman {
 
     border-radius: 100%;
 }
 
-#github{
+#github {
     border-radius: 100%;
 }
 
-#oracle{
+#oracle {
     width: 250px;
 }
 
-#docker{
+#docker {
     width: 190px;
     border-radius: 20px;
 }
 
-.other-skills-description{
+.other-skills-description {
+
     color: white;
     width: 70%;
     align-items: center;
     text-align: left;
-    margin: auto;
+    margin: 30px auto;
     padding: 10px;
 }
 
-.other-skills-description p{
-   line-height: 2;
-   margin: 10px;
+.other-skills-description p {
+    line-height: 2;
+    margin: 10px;
 }
 
-.footer{
+.footer {
     text-align: center;
     color: white;
 }
 
-.footer h1{
-   padding: 10px;
-   margin: 10px;
+.footer h1 {
+    padding: 10px;
+    margin: 10px;
 }
 
-.contact-area{
+.contact-area {
     margin: 10px;
     padding: 10px;
     background: rgba(10, 7, 44, 0.3);
     margin: 0px;
 }
 
-.contact-area p{
-    
+.contact-area p {
+
     text-decoration: none;
 }
 
-.links{
+.links {
     padding: 50px 0 20px 0;
     background-color: rgb(13, 30, 69, 0.950);
 }
 
-.links li{
+.links li {
     list-style: none;
     display: inline;
     margin: 10px 0px;
     padding: 20px;
 }
 
-.links li:hover{
+.links li:hover {
     text-shadow: 2px 2px 5px white;
 }
 
-.links p{
+.links p {
     box-sizing: border-box;
     padding: 20px 0px 20px 0px;
     margin: 10px;
     width: 100%;
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
     .top-container .Intro {
         display: flex;
@@ -379,30 +387,32 @@ nav span{
         text-shadow: 2px 2px 8px black;
     }
 
-    .top-container .Intro .introdesc{
+    .top-container .Intro .introdesc {
         width: 100%;
         margin-top: 20px;
         padding: 10px;
-     }
-     
-     .top-container .img-pp {
-         width: 70%;
-     }
+    }
+
+    .top-container .img-pp {
+        width: 70%;
+    }
 
     nav {
         display: flex;
         flex-direction: column;
         justify-content: end;
         background-color: rgb(13, 30, 69, 0.3);
-        
+
     }
 
-    nav ul  {
+    nav ul {
         list-style-type: none;
         display: block;
         text-align: left;
-        padding: 0; /* Remove padding */
-        margin: 0; /* Remove margins */
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margins */
     }
 
     nav ul li {
@@ -448,7 +458,7 @@ nav span{
         align-items: center;
         justify-content: center;
     }
-    
+
     .front-description {
         justify-content: flex;
         height: 75%;
@@ -472,18 +482,18 @@ nav span{
         box-shadow: 0 5px 10px 1px black;
         font-size: small;
     }
-    
-    .backend-images img{
+
+    .backend-images img {
         width: 150px;
         height: 150px;
     }
-    
+
     .backend-images {
         width: 100%;
         height: 25%;
         display: grid;
         /* grid-template-columns: 200px 200px; */
-         /*grid-row: 200px auto;*/
+        /*grid-row: 200px auto;*/
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         border-radius: 30px 30px 0px 0px;
@@ -491,7 +501,7 @@ nav span{
         /* gap: 10px; */
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .backend-container .description {
         justify-content: flex;
         height: 75%;
@@ -502,7 +512,7 @@ nav span{
         background: rgba(10, 7, 44, 0.9);
     }
 
-    .other-skills-description{
+    .other-skills-description {
         color: white;
         width: 90%;
         align-items: center;
@@ -512,62 +522,47 @@ nav span{
         font-size: small;
         line-height: 0.5;
     }
-    
-    .other-skills-description p{
-       line-height: 2;
-       margin: 10px;
+
+    .other-skills-description p {
+        line-height: 2;
+        margin: 30px auto;
     }
 
-    .other-skills-images{
-        padding: 30px;
-        background: rgba(165, 160, 180, 0.422);
-        box-shadow: 0 5px 10px 1px black;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 220px 220px;
-        grid-row: 100px 100px;
-        grid-column-gap: 30px;
-        grid-row-gap: 10px;
-        border-radius: 20px 20px 0px 0px;
-        grid-auto-rows: 200px;
-        gap: 10px;
-        grid-template-columns: repeat(3,1fr);
-    }
-
-     #git{
+    #git {
         display: block;
-        width: 100%;
+        width: 300px;
     }
-    
-    #postman{
-        width: 120px;
+
+    #postman {
+        width: 150px;
         border-radius: 100%;
     }
-    
-    #github{
+
+    #github {
         border-radius: 100%;
     }
-    
-    #oracle{
+
+    #oracle {
         width: 200px;
     }
-    
-    #docker{
+
+    #docker {
         width: 150px;
         border-radius: 20px;
     }
-    #swagger{
-        width: 120px; 
-    } 
+
+    #swagger {
+        width: 150px;
+    }
 
     .box {
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-}
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 10px;
+    }
 
 }
