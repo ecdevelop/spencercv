@@ -1,6 +1,7 @@
 * {
     margin: 0;
     top: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,6 +43,7 @@ nav span{
     height:100%;
     width: 100%;
     border-radius: 100%;
+    border: 5px solid white;
 }
 
 .top-container .Intro {
@@ -310,11 +312,12 @@ nav span{
 }
 
 .other-skills-description{
+    
     color: white;
     width: 70%;
     align-items: center;
     text-align: left;
-    margin: auto;
+    margin: 30px auto;
     padding: 10px;
 }
 
@@ -515,7 +518,7 @@ nav span{
     
     .other-skills-description p{
        line-height: 2;
-       margin: 10px;
+       margin: 30px auto;
     }
 
     .other-skills-images{
