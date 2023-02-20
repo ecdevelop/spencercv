@@ -151,6 +151,7 @@ nav ul a {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border-radius: 20px;
+    overflow:auto;
 }
 
 .box {
